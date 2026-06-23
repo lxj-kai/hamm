@@ -1,0 +1,22 @@
+{
+  "data_path": "/path/to/HAMM_resources/data/",
+  "pretrained_checkpoint_path": "/path/to/HAMM_resources/checkpoint_pretrained_fc_norm.pth",
+  "checkpoints_path": "/path/to/HAMM_resources/c_meh",
+  "head_path": "/path/to/HAMM_resources/new/ViT-L-16",
+  "percentile_threshold": "30%",
+  "exam_datasets": [
+    "APTOS2019",
+    "OCTID",
+    "Glaucoma_fundus",
+    "IDRID",
+    "JSIEC",
+    "MESSIDOR2",
+    "PAPILA",
+    "Retina"
+  ],
+  "batch_size": 1,
+  "seed": 42,
+  "input_size": 224,
+  "num_workers": 4,
+  "pin_mem": true
+}

@@ -1,0 +1,26 @@
+# =============================================================================
+# HAMM dependencies
+#
+# Recommended setup command: bash scripts/setup_env.sh
+# The setup script installs CUDA-matched torch/torchvision first, then the packages below.
+#
+# If installing PyTorch manually, make sure torch/torchvision match the CUDA version, e.g. cu121:
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+# =============================================================================
+
+# --- Deep learning ---
+timm>=0.6.13,<1.0
+
+# --- Numerical computing / metrics ---
+numpy>=1.26.4,<2
+scipy>=1.11
+scikit-learn>=1.4.2,<2
+
+# --- Image / data ---
+Pillow>=10.2.0
+
+# --- Utilities ---
+tqdm>=4.66
+
+# --- Optional: useful when downloading RETFound pretrained weights from HuggingFace ---
+# huggingface-hub>=0.23

@@ -1,0 +1,71 @@
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local submission/AC communication materials
+ac_email/
+
+# Runtime logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# Training/evaluation outputs
+runs/*
+!runs/.gitkeep
+temp_grad_logs/
+temp_weight_logs/
+mergedmodel/
+wandb/
+
+# Local external resources.
+# RETFound data/checkpoints/pretrained weights should be downloaded separately.
+data/
+c_meh/
+new/
+checkpoints/
+checkpoint_pretrained_fc_norm.pth
+HAMM_resources/
+
+# Large model/checkpoint files are ignored by default.
+# Keep the released HAMM mergeweight.
+*.ckpt
+*.safetensors
+*.onnx
+*.pt
+*.pth
+!model/mergeweight_final.pth
+model/merged_backbone_final.pth
+model/merged_backbone_final.zip
+
+# Local evaluation outputs.
+results/*
+!results/.gitkeep
